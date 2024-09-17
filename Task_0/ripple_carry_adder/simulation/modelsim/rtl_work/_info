@@ -1,0 +1,83 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/simulation/modelsim
+vfull_adder
+Z1 !s110 1726598449
+!i10b 1
+!s100 3De0SURcGX^FNoF>WQ<m<3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IRA>PC@z^Q?6S_DV9?O:IZ3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1726597907
+8/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/full_adder.v
+F/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/full_adder.v
+!i122 0
+L0 5 9
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1726598448.000000
+!s107 /home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/full_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder|/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/full_adder.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder
+Z7 tCvgOpt 0
+vripple_carry_adder
+R1
+!i10b 1
+!s100 Ro]oo?]Xk3?=;B8ICn]7o0
+R2
+IPm3LkXdIfzhfPTh_4?`ba3
+R3
+R0
+w1726598388
+8/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/ripple_carry_adder.v
+F/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/ripple_carry_adder.v
+!i122 1
+L0 5 29
+R4
+r1
+!s85 0
+31
+Z8 !s108 1726598449.000000
+!s107 /home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/ripple_carry_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder|/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/ripple_carry_adder.v|
+!i113 1
+R5
+R6
+R7
+vripple_carry_adder_tb
+R1
+!i10b 1
+!s100 FJakMGW3=dK0[9CmVCKGX3
+R2
+IAfKYj<C`z:_LCflAWBeX`3
+R3
+R0
+w1726596768
+8/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/ripple_carry_adder_tb.v
+F/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/ripple_carry_adder_tb.v
+!i122 2
+L0 3 27
+R4
+r1
+!s85 0
+31
+R8
+!s107 /home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/ripple_carry_adder_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder|/home/eyantra/Documents/Eyantra_Stage_1/Task_0/ripple_carry_adder/ripple_carry_adder_tb.v|
+!i113 1
+R5
+R6
+R7

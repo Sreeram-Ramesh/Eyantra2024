@@ -1,0 +1,35 @@
+// Sequence Detector Testbench
+
+module sequence_detector_tb;
+
+	reg clk = 1;
+	reg [3:0] number;
+	
+	wire Out;
+	
+	sequence_detector uut(
+						.clk(clk),
+						.digit(number),
+						.pattern(Out)
+	);
+	
+	always @(posedge clk) begin
+	
+		clk = ~clk; #100;
+	
+	end
+	
+	initial begin
+	
+		number = 4'b0000; #150;
+		number = 4'b0101; #150;
+		number = 4'b0001; #150;
+		number = 4'b0000; #150;
+		number = 4'b0001; #150;
+		number = 4'b0000; #150;
+		number = 4'b1001; #150;
+		number = 4'b0100; #150;
+	
+	end
+
+endmodule

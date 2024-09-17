@@ -1,0 +1,78 @@
+# do sequence_detector_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/eyantra/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/sequence_detector {/home/eyantra/Documents/Eyantra_Stage_1/Task_0/sequence_detector/sequence_detector.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:06:11 on Sep 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/sequence_detector" /home/eyantra/Documents/Eyantra_Stage_1/Task_0/sequence_detector/sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 01:06:11 on Sep 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/sequence_detector {/home/eyantra/Documents/Eyantra_Stage_1/Task_0/sequence_detector/sequence_detector_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:06:11 on Sep 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/sequence_detector" /home/eyantra/Documents/Eyantra_Stage_1/Task_0/sequence_detector/sequence_detector_tb.v 
+# -- Compiling module sequence_detector_tb
+# 
+# Top level modules:
+# 	sequence_detector_tb
+# End time: 01:06:11 on Sep 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  sequence_detector_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" sequence_detector_tb 
+# Start time: 01:06:11 on Sep 18,2024
+# Loading work.sequence_detector_tb
+# Loading work.sequence_detector
+# 
+# add wave *
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: eyantra  Hostname: eyantra-Zenbook-UX3404VA-Q420VA  ProcessID: 38722
+#           Attempting to use alternate WLF file "./wlftAKXRb9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftAKXRb9
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : /home/eyantra/Documents/Eyantra_Stage_1/Task_0/sequence_detector/sequence_detector_tb.v(33)
+#    Time: 675 ps  Iteration: 0  Instance: /sequence_detector_tb
+# 1
+# Break in Module sequence_detector_tb at /home/eyantra/Documents/Eyantra_Stage_1/Task_0/sequence_detector/sequence_detector_tb.v line 33
+# couldn't load file "/home/eyantra/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk1.14.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
+# ** Error: list element in quotes followed by ":" instead of space
+# Error in macro ./sequence_detector_run_msim_rtl_verilog.do line 17
+# list element in quotes followed by ":" instead of space
+#     while executing
+# "foreach val $retval { 
+# 						set wobj [$vsimPriv(windowmgr) FindWindowObj $val]
+# 						if { $wobj ne "" && [lsearch $windowobj_list $wobj] < 0 } {
+# 				..."
+#     (procedure "view" line 144)
+#     invoked from within
+# "view source"
+#     (procedure "run" line 107)
+#     invoked from within
+# "run -all"
+# 
+# stdin: <EOF>
+# End time: 01:06:38 on Sep 18,2024, Elapsed time: 0:00:27
+# Errors: 1, Warnings: 2
