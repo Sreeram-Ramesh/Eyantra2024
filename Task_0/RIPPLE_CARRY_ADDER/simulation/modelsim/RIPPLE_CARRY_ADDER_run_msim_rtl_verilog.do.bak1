@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/RIPPLE_CARRY_ADDER {/home/eyantra/Documents/Eyantra_Stage_1/Task_0/RIPPLE_CARRY_ADDER/full_adder.v}
+vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/RIPPLE_CARRY_ADDER {/home/eyantra/Documents/Eyantra_Stage_1/Task_0/RIPPLE_CARRY_ADDER/ripple_carry_adder.v}
+
