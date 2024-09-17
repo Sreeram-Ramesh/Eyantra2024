@@ -1,0 +1,63 @@
+# do TRAFFIC_LIGHT_CONTROLLER_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/eyantra/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER {/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:23:26 on Sep 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER" /home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller.v 
+# -- Compiling module traffic_light_controller
+# 
+# Top level modules:
+# 	traffic_light_controller
+# End time: 19:23:26 on Sep 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER {/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:23:26 on Sep 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER" /home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller_tb.v 
+# -- Compiling module traffic_light_controller_tb
+# 
+# Top level modules:
+# 	traffic_light_controller_tb
+# End time: 19:23:26 on Sep 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  traffic_light_controller_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" traffic_light_controller_tb 
+# Start time: 19:23:26 on Sep 17,2024
+# Loading work.traffic_light_controller_tb
+# Loading work.traffic_light_controller
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 100 ns
+# 
+# stdin: <EOF>
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" work.traffic_light_controller_tb
+# End time: 19:24:06 on Sep 17,2024, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" work.traffic_light_controller_tb 
+# Start time: 19:24:06 on Sep 17,2024
+# Loading work.traffic_light_controller_tb
+# Loading work.traffic_light_controller
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" work.traffic_light_controller_tb
+# End time: 19:24:24 on Sep 17,2024, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" work.traffic_light_controller_tb 
+# Start time: 19:24:24 on Sep 17,2024
+# Loading work.traffic_light_controller_tb
+# Loading work.traffic_light_controller
+# End time: 19:24:29 on Sep 17,2024, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0

@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, /home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller.v
+source_file = 1, /home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller_tb.v
+source_file = 1, /home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/db/TRAFFIC_LIGHT_CONTROLLER.cbx.xml
+design_name = traffic_light_controller
+instance = comp, \red~output , red~output, traffic_light_controller, 1
+instance = comp, \yellow~output , yellow~output, traffic_light_controller, 1
+instance = comp, \green~output , green~output, traffic_light_controller, 1
+instance = comp, \clk~input , clk~input, traffic_light_controller, 1
+instance = comp, \state.ST_INIT , state.ST_INIT, traffic_light_controller, 1
+instance = comp, \state~10 , state~10, traffic_light_controller, 1
+instance = comp, \state.ST_GREEN , state.ST_GREEN, traffic_light_controller, 1
+instance = comp, \state.ST_YELLOW , state.ST_YELLOW, traffic_light_controller, 1
+instance = comp, \state.ST_RED , state.ST_RED, traffic_light_controller, 1
+instance = comp, \red~reg0 , red~reg0, traffic_light_controller, 1
+instance = comp, \yellow~reg0 , yellow~reg0, traffic_light_controller, 1
+instance = comp, \green~reg0 , green~reg0, traffic_light_controller, 1

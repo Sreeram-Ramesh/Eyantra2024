@@ -1,0 +1,260 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
+
+// DATE "09/17/2024 19:27:41"
+
+// 
+// Device: Altera EP4CE22F17C6 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module traffic_light_controller (
+	clk,
+	red,
+	yellow,
+	green);
+input 	clk;
+output 	red;
+output 	yellow;
+output 	green;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \red~output_o ;
+wire \yellow~output_o ;
+wire \green~output_o ;
+wire \clk~input_o ;
+wire \state.ST_INIT~q ;
+wire \state~10_combout ;
+wire \state.ST_GREEN~q ;
+wire \state.ST_YELLOW~q ;
+wire \state.ST_RED~q ;
+wire \red~reg0_q ;
+wire \yellow~reg0_q ;
+wire \green~reg0_q ;
+
+
+cycloneive_io_obuf \red~output (
+	.i(\red~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\red~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \red~output .bus_hold = "false";
+defparam \red~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \yellow~output (
+	.i(\yellow~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\yellow~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \yellow~output .bus_hold = "false";
+defparam \yellow~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \green~output (
+	.i(\green~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\green~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \green~output .bus_hold = "false";
+defparam \green~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \state.ST_INIT (
+	.clk(\clk~input_o ),
+	.d(vcc),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\state.ST_INIT~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state.ST_INIT .is_wysiwyg = "true";
+defparam \state.ST_INIT .power_up = "low";
+// synopsys translate_on
+
+cycloneive_lcell_comb \state~10 (
+// Equation(s):
+// \state~10_combout  = (\state.ST_RED~q ) # (!\state.ST_INIT~q )
+
+	.dataa(\state.ST_RED~q ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\state.ST_INIT~q ),
+	.cin(gnd),
+	.combout(\state~10_combout ),
+	.cout());
+// synopsys translate_off
+defparam \state~10 .lut_mask = 16'hAAFF;
+defparam \state~10 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+dffeas \state.ST_GREEN (
+	.clk(\clk~input_o ),
+	.d(\state~10_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\state.ST_GREEN~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state.ST_GREEN .is_wysiwyg = "true";
+defparam \state.ST_GREEN .power_up = "low";
+// synopsys translate_on
+
+dffeas \state.ST_YELLOW (
+	.clk(\clk~input_o ),
+	.d(\state.ST_GREEN~q ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\state.ST_YELLOW~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state.ST_YELLOW .is_wysiwyg = "true";
+defparam \state.ST_YELLOW .power_up = "low";
+// synopsys translate_on
+
+dffeas \state.ST_RED (
+	.clk(\clk~input_o ),
+	.d(\state.ST_YELLOW~q ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\state.ST_RED~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state.ST_RED .is_wysiwyg = "true";
+defparam \state.ST_RED .power_up = "low";
+// synopsys translate_on
+
+dffeas \red~reg0 (
+	.clk(\clk~input_o ),
+	.d(\state.ST_RED~q ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\red~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \red~reg0 .is_wysiwyg = "true";
+defparam \red~reg0 .power_up = "low";
+// synopsys translate_on
+
+dffeas \yellow~reg0 (
+	.clk(\clk~input_o ),
+	.d(\state.ST_YELLOW~q ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\yellow~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \yellow~reg0 .is_wysiwyg = "true";
+defparam \yellow~reg0 .power_up = "low";
+// synopsys translate_on
+
+dffeas \green~reg0 (
+	.clk(\clk~input_o ),
+	.d(\state.ST_GREEN~q ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\green~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \green~reg0 .is_wysiwyg = "true";
+defparam \green~reg0 .power_up = "low";
+// synopsys translate_on
+
+assign red = \red~output_o ;
+
+assign yellow = \yellow~output_o ;
+
+assign green = \green~output_o ;
+
+endmodule

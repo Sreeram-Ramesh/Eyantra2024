@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/simulation/modelsim
+vtraffic_light_controller
+Z1 !s110 1726581206
+!i10b 1
+!s100 =8^Xj9U18E?8TCUF56JL=3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^`MmlZKU2]Y^AIXa_>kkZ1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1726579318
+8/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller.v
+F/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller.v
+!i122 0
+L0 4 56
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1726581206.000000
+!s107 /home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER|/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER
+Z8 tCvgOpt 0
+vtraffic_light_controller_tb
+R1
+!i10b 1
+!s100 [ZS[RT3>o[3nnc1R_aaGb0
+R2
+IJ?azm0NlAZ1OHRIR3YfRn1
+R3
+R0
+w1726580200
+8/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller_tb.v
+F/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller_tb.v
+!i122 1
+L0 3 20
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER|/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller_tb.v|
+!i113 1
+R6
+R7
+R8

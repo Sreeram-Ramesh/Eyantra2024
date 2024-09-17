@@ -1,0 +1,73 @@
+// Sequence Detector module to detect sequence 1094
+
+module sequence_detector(clk, digit, pattern);
+
+	input clk;
+	input [0:3] digit;
+	output reg pattern = 0;
+	
+	parameter ST_ONE = 0, ST_ZERO = 1, ST_NINE = 2, ST_FOUR = 3;
+	
+	reg state = ST_ONE;
+	
+	always @(posedge clk) begin
+	
+		case(state)
+		
+			ST_ONE:
+			
+				begin
+				
+					if (digit == 1)
+						state = ST_ZERO;
+					else
+						state = ST_ONE;
+				
+				end
+				
+			ST_ZERO:
+			
+				begin
+				
+					if (digit == 0)
+						state = ST_NINE;
+					else
+						state = ST_ONE;
+						
+				end
+				
+			ST_NINE:
+			
+				begin
+				
+					if (digit == 9)
+						state = ST_FOUR;
+					else
+						state = ST_ONE;
+				
+				end
+				
+			ST_FOUR:
+			
+				begin
+				
+					if (digit == 4)
+						
+						begin
+						
+							state = ST_ONE;
+							pattern = 1;
+						
+						end
+						
+					else
+						
+						state = ST_ONE;
+				
+				end
+		
+		endcase
+	
+	end
+	
+endmodule

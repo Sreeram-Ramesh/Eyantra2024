@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER {/home/eyantra/Documents/Eyantra_Stage_1/Task_0/TRAFFIC_LIGHT_CONTROLLER/traffic_light_controller.v}
+
