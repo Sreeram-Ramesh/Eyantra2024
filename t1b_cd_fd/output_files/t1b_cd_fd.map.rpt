@@ -1,5 +1,5 @@
 Analysis & Synthesis report for t1b_cd_fd
-Wed Oct  9 00:20:55 2024
+Sun Oct 13 14:47:21 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -16,9 +16,10 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   8. General Register Statistics
   9. Inverted Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |t1b_cd_fd
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -45,15 +46,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct  9 00:20:55 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 13 14:47:21 2024       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; t1b_cd_fd                                   ;
 ; Top-level Entity Name              ; t1b_cd_fd                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 73                                          ;
-;     Total combinational functions  ; 70                                          ;
-;     Dedicated logic registers      ; 45                                          ;
-; Total registers                    ; 45                                          ;
+; Total logic elements               ; 53                                          ;
+;     Total combinational functions  ; 50                                          ;
+;     Dedicated logic registers      ; 27                                          ;
+; Total registers                    ; 27                                          ;
 ; Total pins                         ; 6                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -161,8 +162,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-14        ;   0.0%      ;
+;     Processors 2-14        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -175,36 +175,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 73           ;
-;                                             ;              ;
-; Total combinational functions               ; 70           ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 10           ;
-;     -- 3 input functions                    ; 53           ;
-;     -- <=2 input functions                  ; 7            ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 36           ;
-;     -- arithmetic mode                      ; 34           ;
-;                                             ;              ;
-; Total registers                             ; 45           ;
-;     -- Dedicated logic registers            ; 45           ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 6            ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; cs_out~input ;
-; Maximum fan-out                             ; 32           ;
-; Total fan-out                               ; 330          ;
-; Average fan-out                             ; 2.60         ;
-+---------------------------------------------+--------------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 53       ;
+;                                             ;          ;
+; Total combinational functions               ; 50       ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 10       ;
+;     -- 3 input functions                    ; 24       ;
+;     -- <=2 input functions                  ; 16       ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 33       ;
+;     -- arithmetic mode                      ; 17       ;
+;                                             ;          ;
+; Total registers                             ; 27       ;
+;     -- Dedicated logic registers            ; 27       ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 6        ;
+;                                             ;          ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; Equal2~1 ;
+; Maximum fan-out                             ; 17       ;
+; Total fan-out                               ; 216      ;
+; Average fan-out                             ; 2.43     ;
++---------------------------------------------+----------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -212,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |t1b_cd_fd                 ; 70 (70)             ; 45 (45)                   ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |t1b_cd_fd          ; t1b_cd_fd   ; work         ;
+; |t1b_cd_fd                 ; 50 (50)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |t1b_cd_fd          ; t1b_cd_fd   ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -222,12 +222,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 45    ;
+; Total registers                              ; 27    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 19    ;
+; Number of registers using Clock Enable       ; 10    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -237,20 +237,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; filter[0]~reg0                         ; 23      ;
-; filter[1]~reg0                         ; 24      ;
+; filter[0]~reg0                         ; 14      ;
+; filter[1]~reg0                         ; 15      ;
 ; Total number of inverted registers = 2 ;         ;
 +----------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |t1b_cd_fd|pcolor[0]       ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |t1b_cd_fd|csf_counter[1]  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |t1b_cd_fd|prev_color[0]     ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |t1b_cd_fd|prev_frequency[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |t1b_cd_fd ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; RED_FILTER     ; 0     ; Signed Integer                                   ;
+; BLUE_FILTER    ; 1     ; Signed Integer                                   ;
+; CLEAR_FILTER   ; 2     ; Signed Integer                                   ;
+; GREEN_FILTER   ; 3     ; Signed Integer                                   ;
+; RED_COLOR      ; 1     ; Signed Integer                                   ;
+; BLUE_COLOR     ; 3     ; Signed Integer                                   ;
+; CLEAR_COLOR    ; 0     ; Signed Integer                                   ;
+; GREEN_COLOR    ; 2     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -259,21 +276,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 6                           ;
-; cycloneiii_ff         ; 45                          ;
-;     ENA               ; 19                          ;
-;     plain             ; 26                          ;
-; cycloneiii_lcell_comb ; 72                          ;
-;     arith             ; 34                          ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 33                          ;
-;     normal            ; 38                          ;
+; cycloneiii_ff         ; 27                          ;
+;     ENA               ; 10                          ;
+;     plain             ; 17                          ;
+; cycloneiii_lcell_comb ; 52                          ;
+;     arith             ; 17                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 12                          ;
+;     normal            ; 35                          ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 20                          ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 12                          ;
 ;         4 data inputs ; 10                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.30                        ;
-; Average LUT depth     ; 2.99                        ;
+; Max LUT depth         ; 5.50                        ;
+; Average LUT depth     ; 3.83                        ;
 +-----------------------+-----------------------------+
 
 
@@ -292,26 +309,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct  9 00:20:50 2024
+    Info: Processing started: Sun Oct 13 14:47:17 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off t1b_cd_fd -c t1b_cd_fd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file code/t1b_cd_fd.v
     Info (12023): Found entity 1: t1b_cd_fd File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 20
 Info (12127): Elaborating entity "t1b_cd_fd" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(77): truncated value with size 32 to match size of target (9) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 77
-Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(110): truncated value with size 32 to match size of target (15) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 110
+Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(41): truncated value with size 32 to match size of target (2) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 41
+Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(42): truncated value with size 32 to match size of target (2) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 42
+Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(50): truncated value with size 32 to match size of target (6) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 50
+Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(60): truncated value with size 32 to match size of target (2) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 60
+Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(61): truncated value with size 32 to match size of target (2) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 61
+Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(62): truncated value with size 32 to match size of target (2) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 62
+Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(84): truncated value with size 32 to match size of target (2) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 84
+Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(86): truncated value with size 32 to match size of target (2) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 86
+Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(89): truncated value with size 32 to match size of target (2) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 89
+Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(99): truncated value with size 32 to match size of target (2) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 99
+Warning (10230): Verilog HDL assignment warning at t1b_cd_fd.v(104): truncated value with size 32 to match size of target (9) File: /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v Line: 104
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 79 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 73 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 496 megabytes
-    Info: Processing ended: Wed Oct  9 00:20:55 2024
-    Info: Elapsed time: 00:00:05
+    Info (21061): Implemented 53 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 472 megabytes
+    Info: Processing ended: Sun Oct 13 14:47:21 2024
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:15
 
 

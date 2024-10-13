@@ -11,29 +11,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/t1b_cd_fd/code {/home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:21:08 on Oct 09,2024
+# Start time: 14:47:29 on Oct 13,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/eyantra/Documents/t1b_cd_fd/code" /home/eyantra/Documents/t1b_cd_fd/code/t1b_cd_fd.v 
 # -- Compiling module t1b_cd_fd
 # 
 # Top level modules:
 # 	t1b_cd_fd
-# End time: 00:21:08 on Oct 09,2024, Elapsed time: 0:00:00
+# End time: 14:47:29 on Oct 13,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/t1b_cd_fd/.test {/home/eyantra/Documents/t1b_cd_fd/.test/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:21:08 on Oct 09,2024
+# Start time: 14:47:29 on Oct 13,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/eyantra/Documents/t1b_cd_fd/.test" /home/eyantra/Documents/t1b_cd_fd/.test/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 00:21:08 on Oct 09,2024, Elapsed time: 0:00:00
+# End time: 14:47:29 on Oct 13,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 00:21:08 on Oct 09,2024
+# Start time: 14:47:29 on Oct 13,2024
 # Loading work.tb
 # Loading work.t1b_cd_fd
 # 
@@ -46,5 +46,5 @@
 # No errors encountered, congratulations!
 # 
 # stdin: <EOF>
-# End time: 00:22:48 on Oct 09,2024, Elapsed time: 0:01:40
+# End time: 14:49:02 on Oct 13,2024, Elapsed time: 0:01:33
 # Errors: 0, Warnings: 0
