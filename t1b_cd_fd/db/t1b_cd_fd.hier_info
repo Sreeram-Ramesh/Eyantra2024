@@ -1,4 +1,5 @@
 |t1b_cd_fd
+clk_1MHz => always0.IN1
 clk_1MHz => counter[0].CLK
 clk_1MHz => counter[1].CLK
 clk_1MHz => counter[2].CLK
@@ -17,7 +18,6 @@ cs_out => prev_frequency[1].CLK
 cs_out => prev_frequency[2].CLK
 cs_out => prev_frequency[3].CLK
 cs_out => prev_frequency[4].CLK
-cs_out => prev_frequency[5].CLK
 cs_out => prev_color[0].CLK
 cs_out => prev_color[1].CLK
 cs_out => frequency[0].CLK
@@ -25,7 +25,6 @@ cs_out => frequency[1].CLK
 cs_out => frequency[2].CLK
 cs_out => frequency[3].CLK
 cs_out => frequency[4].CLK
-cs_out => frequency[5].CLK
 filter[0] <= filter[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 filter[1] <= filter[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 color[0] <= color[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE

@@ -29,8 +29,8 @@ module t1b_cd_fd (
 //////////////////DO NOT MAKE ANY CHANGES ABOVE THIS LINE //////////////////
 
 reg [8:0] counter = 0;
-reg [5:0] frequency = 0;
-reg [5:0] prev_frequency = 0;
+reg [4:0] frequency = 0;
+reg [4:0] prev_frequency = 0;
 reg [1:0] prev_color = 0;
 
 parameter RED_FILTER = 0, BLUE_FILTER = 1, CLEAR_FILTER = 2, GREEN_FILTER = 3;
@@ -45,7 +45,7 @@ end
 
 always @(posedge cs_out) begin
 	
-	if (counter == 100) begin
+	if (counter == 100 && clk_1MHz == 1 && frequency < 31) begin
 	
 		frequency = frequency + 1;
 	
