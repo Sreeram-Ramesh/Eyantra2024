@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at t1b_cd_fd.v(45): always construct contains both blocking and non-blocking assignments File: C:/eYantra/t1b_cd_fd/code/t1b_cd_fd.v Line: 45

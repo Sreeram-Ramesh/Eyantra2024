@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/eYantra/t1a_fs_pwm/simulation/qsim
+vhard_block
+Z1 !s110 1729062922
+!i10b 1
+!s100 J8MZ1EJbPP[H1:gP^lWai2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1LcXkMnok:65iRFQd>ALG2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1729062922
+Z5 8t1a_fs_pwm.vo
+Z6 Ft1a_fs_pwm.vo
+!i122 0
+L0 496 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1729062922.000000
+Z9 !s107 t1a_fs_pwm.vo|
+Z10 !s90 -work|work|t1a_fs_pwm.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vt1a_fs_pwm_bdf
+R1
+!i10b 1
+!s100 fIRCC`acj`j>fVG9DfhPL3
+R2
+If5JBzb:3YH38JEI=hR6273
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 32 463
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vt1a_fs_pwm_bdf_vlg_vec_tst
+!s110 1729062923
+!i10b 1
+!s100 73M:VA2@IIk9KbQ9ZkQiI1
+R2
+I?>i525[^VT39>OIRiUZfj1
+R3
+R0
+w1729062921
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 1
+L0 30 38
+R7
+r1
+!s85 0
+31
+!s108 1729062923.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
