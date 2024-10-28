@@ -1,0 +1,14 @@
+
+State Machine - |uart_rx|state
+Name state.STOP state.PARITY state.BIT7 state.BIT6 state.BIT5 state.BIT4 state.BIT3 state.BIT2 state.BIT1 state.BIT0 state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 
+state.BIT0 0 0 0 0 0 0 0 0 0 1 1 
+state.BIT1 0 0 0 0 0 0 0 0 1 0 1 
+state.BIT2 0 0 0 0 0 0 0 1 0 0 1 
+state.BIT3 0 0 0 0 0 0 1 0 0 0 1 
+state.BIT4 0 0 0 0 0 1 0 0 0 0 1 
+state.BIT5 0 0 0 0 1 0 0 0 0 0 1 
+state.BIT6 0 0 0 1 0 0 0 0 0 0 1 
+state.BIT7 0 0 1 0 0 0 0 0 0 0 1 
+state.PARITY 0 1 0 0 0 0 0 0 0 0 1 
+state.STOP 1 0 0 0 0 0 0 0 0 0 1 
