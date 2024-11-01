@@ -30,23 +30,23 @@ tx_start => state[0].IN1
 tx_start => state[1].OUTPUTSELECT
 tx_start => state[2].OUTPUTSELECT
 tx_start => state[3].OUTPUTSELECT
-data[0] => Add6.IN2
+data[0] => WideXor0.IN0
 data[0] => Mux1.IN10
-data[1] => Add5.IN2
+data[1] => WideXor0.IN1
 data[1] => Mux1.IN9
-data[2] => Add4.IN2
+data[2] => WideXor0.IN2
 data[2] => Mux1.IN8
-data[3] => Add3.IN2
+data[3] => WideXor0.IN3
 data[3] => Mux1.IN7
-data[4] => Add2.IN2
+data[4] => WideXor0.IN4
 data[4] => Mux1.IN6
-data[5] => Add1.IN2
+data[5] => WideXor0.IN5
 data[5] => Mux1.IN5
-data[6] => Add0.IN2
+data[6] => WideXor0.IN6
 data[6] => Mux1.IN4
-data[7] => Add0.IN1
+data[7] => WideXor0.IN7
 data[7] => Mux1.IN3
-tx <= tx~reg0.DB_MAX_OUTPUT_PORT_TYPE
-tx_done <= tx_done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tx << tx~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tx_done << tx_done~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

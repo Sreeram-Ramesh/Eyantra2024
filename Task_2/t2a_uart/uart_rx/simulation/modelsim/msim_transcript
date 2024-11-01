@@ -11,30 +11,30 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code {/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:22:35 on Oct 28,2024
+# Start time: 10:07:13 on Nov 01,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code" /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v 
 # -- Compiling module uart_rx
 # 
 # Top level modules:
 # 	uart_rx
-# End time: 16:22:35 on Oct 28,2024, Elapsed time: 0:00:00
+# End time: 10:07:13 on Nov 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test {/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:22:35 on Oct 28,2024
+# Start time: 10:07:13 on Nov 01,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test" /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test/tb.v 
 # -- Compiling module tb
 # ** Warning: /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test/tb.v(45): (vlog-2609) indexed range expression contains whitespace between '+' and ':'.
 # 
 # Top level modules:
 # 	tb
-# End time: 16:22:35 on Oct 28,2024, Elapsed time: 0:00:00
+# End time: 10:07:13 on Nov 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 16:22:35 on Oct 28,2024
+# Start time: 10:07:13 on Nov 01,2024
 # Loading work.tb
 # Loading work.uart_rx
 # ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fgets'.
@@ -46,19 +46,13 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 550000 ns
-# rx_msg: h,exp_msg:h,rx_parity:1,correct_parity:1
-# rx_msg: a,exp_msg:a,rx_parity:1,correct_parity:1
-# rx_msg: ?,exp_msg:?,rx_parity:1,correct_parity:0
-# rx_msg: i,exp_msg:i,rx_parity:0,correct_parity:0
-# rx_msg: v,exp_msg:v,rx_parity:1,correct_parity:1
-# rx_msg: ?,exp_msg:?,rx_parity:1,correct_parity:0
-# rx_msg: ?,exp_msg:?,rx_parity:1,correct_parity:0
-# rx_msg: k,exp_msg:k,rx_parity:1,correct_parity:1
 # rx_msg: e,exp_msg:e,rx_parity:0,correct_parity:0
-# rx_msg: y,exp_msg:y,rx_parity:1,correct_parity:1
+# rx_msg: ?,exp_msg:?,rx_parity:1,correct_parity:0
+# rx_msg: r,exp_msg:r,rx_parity:0,correct_parity:0
+# rx_msg: C,exp_msg:C,rx_parity:1,correct_parity:1
 # No errors encountered, congratulations!
 # ** Note: $stop    : /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test/tb.v(128)
-#    Time: 532800 ns  Iteration: 1  Instance: /tb
+#    Time: 237120 ns  Iteration: 1  Instance: /tb
 # Break in Module tb at /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test/tb.v line 128
 # couldn't load file "/home/eyantra/intelFPGA_lite/20.1/modelsim_ase/linux/ScintillaTk/libScintillaTk1.14.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
 # ** Error: list element in quotes followed by ":" instead of space
@@ -77,5 +71,3 @@
 # "run 550000 ns"
 # 
 # stdin: <EOF>
-# End time: 16:29:40 on Oct 28,2024, Elapsed time: 0:07:05
-# Errors: 1, Warnings: 1

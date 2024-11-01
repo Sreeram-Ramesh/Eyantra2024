@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uart_rx
-Mon Oct 28 16:39:53 2024
+Fri Nov  1 10:07:06 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -46,15 +46,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 28 16:39:53 2024       ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov  1 10:07:06 2024       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; uart_rx                                     ;
 ; Top-level Entity Name              ; uart_rx                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 55                                          ;
+; Total logic elements               ; 56                                          ;
 ;     Total combinational functions  ; 53                                          ;
-;     Dedicated logic registers      ; 27                                          ;
-; Total registers                    ; 27                                          ;
+;     Dedicated logic registers      ; 28                                          ;
+; Total registers                    ; 28                                          ;
 ; Total pins                         ; 12                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -180,20 +180,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 55             ;
+; Estimated Total logic elements              ; 56             ;
 ;                                             ;                ;
 ; Total combinational functions               ; 53             ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 33             ;
-;     -- 3 input functions                    ; 11             ;
-;     -- <=2 input functions                  ; 9              ;
+;     -- 4 input functions                    ; 24             ;
+;     -- 3 input functions                    ; 21             ;
+;     -- <=2 input functions                  ; 8              ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
 ;     -- normal mode                          ; 53             ;
 ;     -- arithmetic mode                      ; 0              ;
 ;                                             ;                ;
-; Total registers                             ; 27             ;
-;     -- Dedicated logic registers            ; 27             ;
+; Total registers                             ; 28             ;
+;     -- Dedicated logic registers            ; 28             ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 12             ;
@@ -201,9 +201,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; clk_3125~input ;
-; Maximum fan-out                             ; 27             ;
-; Total fan-out                               ; 270            ;
-; Average fan-out                             ; 2.60           ;
+; Maximum fan-out                             ; 28             ;
+; Total fan-out                               ; 266            ;
+; Average fan-out                             ; 2.53           ;
 +---------------------------------------------+----------------+
 
 
@@ -212,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |uart_rx                   ; 53 (53)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |uart_rx            ; uart_rx     ; work         ;
+; |uart_rx                   ; 53 (53)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |uart_rx            ; uart_rx     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -235,12 +235,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 27    ;
+; Total registers                              ; 28    ;
 ; Number of registers using Synchronous Clear  ; 1     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 13    ;
+; Number of registers using Clock Enable       ; 15    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -280,19 +280,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 12                          ;
-; cycloneiii_ff         ; 27                          ;
-;     ENA               ; 12                          ;
+; cycloneiii_ff         ; 28                          ;
+;     ENA               ; 14                          ;
 ;     ENA SCLR          ; 1                           ;
-;     plain             ; 14                          ;
+;     plain             ; 13                          ;
 ; cycloneiii_lcell_comb ; 53                          ;
 ;     normal            ; 53                          ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 33                          ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 21                          ;
+;         4 data inputs ; 24                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.28                        ;
+; Average LUT depth     ; 2.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -311,7 +311,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Oct 28 16:39:48 2024
+    Info: Processing started: Fri Nov  1 10:07:02 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uart_rx -c uart_rx
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
@@ -320,22 +320,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file code/ua
 Info (12127): Elaborating entity "uart_rx" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at uart_rx.v(75): truncated value with size 32 to match size of target (4) File: /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v Line: 75
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "state[0]~0" feeding internal logic into a wire File: /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v Line: 53
-    Warning (13049): Converted tri-state buffer "state[1]~1" feeding internal logic into a wire File: /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v Line: 53
-    Warning (13049): Converted tri-state buffer "state[2]~2" feeding internal logic into a wire File: /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v Line: 53
-    Warning (13049): Converted tri-state buffer "state[3]~3" feeding internal logic into a wire File: /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v Line: 53
+    Warning (13049): Converted tri-state buffer "state[0]~0" feeding internal logic into a wire File: /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v Line: 54
+    Warning (13049): Converted tri-state buffer "state[1]~1" feeding internal logic into a wire File: /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v Line: 54
+    Warning (13049): Converted tri-state buffer "state[2]~2" feeding internal logic into a wire File: /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v Line: 54
+    Warning (13049): Converted tri-state buffer "state[3]~3" feeding internal logic into a wire File: /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v Line: 54
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 68 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 55 logic cells
+    Info (21061): Implemented 56 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 480 megabytes
-    Info: Processing ended: Mon Oct 28 16:39:53 2024
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 475 megabytes
+    Info: Processing ended: Fri Nov  1 10:07:06 2024
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:14
 
 

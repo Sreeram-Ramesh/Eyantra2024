@@ -11,29 +11,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_tx/code {/home/eyantra/Documents/Task_2/t2a_uart/uart_tx/code/uart_tx.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:39:07 on Oct 28,2024
+# Start time: 11:43:43 on Oct 31,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_tx/code" /home/eyantra/Documents/Task_2/t2a_uart/uart_tx/code/uart_tx.v 
 # -- Compiling module uart_tx
 # 
 # Top level modules:
 # 	uart_tx
-# End time: 16:39:07 on Oct 28,2024, Elapsed time: 0:00:00
+# End time: 11:43:43 on Oct 31,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_tx/.test {/home/eyantra/Documents/Task_2/t2a_uart/uart_tx/.test/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:39:07 on Oct 28,2024
+# Start time: 11:43:43 on Oct 31,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_tx/.test" /home/eyantra/Documents/Task_2/t2a_uart/uart_tx/.test/tb.v 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 16:39:07 on Oct 28,2024, Elapsed time: 0:00:00
+# End time: 11:43:43 on Oct 31,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 16:39:07 on Oct 28,2024
+# Start time: 11:43:43 on Oct 31,2024
 # Loading work.tb
 # Loading work.uart_tx
 # 
@@ -64,3 +64,5 @@
 # "run 500000 ns"
 # 
 # stdin: <EOF>
+# End time: 11:44:23 on Oct 31,2024, Elapsed time: 0:00:40
+# Errors: 1, Warnings: 0

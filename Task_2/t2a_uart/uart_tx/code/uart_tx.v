@@ -56,7 +56,7 @@ always @(posedge clk_3125) begin
             BIT4:                                                                           {tx, state} = {data[2], BIT5};
             BIT5:                                                                           {tx, state} = {data[1], BIT6};
             BIT6:                                                                           {tx, state} = {data[0], BIT7};
-            BIT7:   {tx, state} = {data[7] + data[6] + data[5] + data[4] + data[3] + data[2] + data[1] + data[0], PARITY};
+            BIT7:                                                                           {tx, state} = {^data, PARITY};
             PARITY:                                                                            {tx, state} = {1'b1, STOP};
             STOP:                                                            {tx, tx_done, state} = {1'b1, 1'b0, 4'bzzzz};
             default;

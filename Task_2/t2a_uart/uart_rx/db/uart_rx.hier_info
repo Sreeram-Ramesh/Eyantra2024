@@ -11,6 +11,7 @@ clk_3125 => rx_prev_msg[4].CLK
 clk_3125 => rx_prev_msg[5].CLK
 clk_3125 => rx_prev_msg[6].CLK
 clk_3125 => rx_prev_msg[7].CLK
+clk_3125 => rx_correct_parity.CLK
 clk_3125 => rx_prev_parity.CLK
 clk_3125 => rx_msg[0]~reg0.CLK
 clk_3125 => rx_msg[1]~reg0.CLK
