@@ -11,30 +11,30 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code {/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:07:13 on Nov 01,2024
+# Start time: 13:20:59 on Nov 03,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code" /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v 
 # -- Compiling module uart_rx
 # 
 # Top level modules:
 # 	uart_rx
-# End time: 10:07:13 on Nov 01,2024, Elapsed time: 0:00:00
+# End time: 13:21:00 on Nov 03,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test {/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:07:13 on Nov 01,2024
+# Start time: 13:21:00 on Nov 03,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test" /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test/tb.v 
 # -- Compiling module tb
 # ** Warning: /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test/tb.v(45): (vlog-2609) indexed range expression contains whitespace between '+' and ':'.
 # 
 # Top level modules:
 # 	tb
-# End time: 10:07:13 on Nov 01,2024, Elapsed time: 0:00:00
+# End time: 13:21:00 on Nov 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 10:07:13 on Nov 01,2024
+# Start time: 13:21:00 on Nov 03,2024
 # Loading work.tb
 # Loading work.uart_rx
 # ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fgets'.

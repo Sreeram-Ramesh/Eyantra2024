@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 d/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/simulation/modelsim
 vtb
-Z1 !s110 1730435833
+Z1 !s110 1730620260
 !i10b 1
 !s100 dh42?3O1BOVXoKG8:XTnJ2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,34 +26,34 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1730435833.000000
+!s108 1730620260.000000
 !s107 /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test/tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test|/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test/tb.v|
 !i113 1
-Z6 o-vlog01compat -work work
+Z5 o-vlog01compat -work work
 !s92 -vlog01compat -work work +incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/.test
-Z7 tCvgOpt 0
+Z6 tCvgOpt 0
 vuart_rx
 R1
 !i10b 1
-!s100 Q[DPY1ON[KY:o@96[e<z:0
+!s100 8m_HnEgDbYGCV66NbkeCI0
 R2
-I`We<[lOlG7PedA]=h82Dg1
+I3oOc:1>N22G<Fa8U2lC0I2
 R3
 R0
-w1730435748
+w1730620078
 8/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v
 F/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v
 !i122 0
-L0 30 53
+L0 30 55
 R4
 r1
 !s85 0
 31
-R5
+!s108 1730620259.000000
 !s107 /home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code|/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code/uart_rx.v|
 !i113 1
-R6
+R5
 !s92 -vlog01compat -work work +incdir+/home/eyantra/Documents/Task_2/t2a_uart/uart_rx/code
-R7
+R6
