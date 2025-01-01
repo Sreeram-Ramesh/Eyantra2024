@@ -1,0 +1,563 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/simulation/modelsim
+vadder
+Z1 !s110 1735665532
+!i10b 1
+!s100 jXE67fZjiCj2W4l?`i:H?0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ib6^hoG5CLamDCQVSiRlJ>0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1730789302
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/adder.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/adder.v
+!i122 20
+L0 4 8
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1735665532.000000
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/adder.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components
+Z9 tCvgOpt 0
+valu
+R1
+!i10b 1
+!s100 ihM[WF8gJ?o7R]PfSmG3:1
+R2
+I7a1UF7YiUm41RTd_D^6]I0
+R3
+R0
+w1735061673
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/alu.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/alu.v
+!i122 19
+L0 4 33
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/alu.v|
+!i113 1
+R7
+R8
+R9
+valu_decoder
+R1
+!i10b 1
+!s100 iCJjgFnG]M`Y@1>g66oY^0
+R2
+I0C`WjEZ=Egd]4ZdOjbZgZ3
+R3
+R0
+w1735061638
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/alu_decoder.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/alu_decoder.v
+!i122 18
+L0 4 35
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/alu_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/alu_decoder.v|
+!i113 1
+R7
+R8
+R9
+vbranching_unit
+R1
+!i10b 1
+!s100 P`CXPZBD=`igb2DgPL?DD3
+R2
+IIVQ?]TNT>kbXRXLD2TEe72
+R3
+R0
+w1734836318
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/branching_unit.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/branching_unit.v
+!i122 8
+L0 4 23
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/branching_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/branching_unit.v|
+!i113 1
+R7
+R8
+R9
+vcontroller
+R1
+!i10b 1
+!s100 Ie0>BUZIeR9EEi>0UDNe90
+R2
+Il;0HOd2BoLc<>egAYELWN0
+R3
+R0
+w1735303863
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/controller.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/controller.v
+!i122 17
+L0 4 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/controller.v|
+!i113 1
+R7
+R8
+R9
+vdata_mem
+R1
+!i10b 1
+!s100 Pfb2N1_E[23IO4:SPW<Yl3
+R2
+IP;XQ;SCm6c9g0>eV6;H]k0
+R3
+R0
+w1735062117
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/data_mem.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/data_mem.v
+!i122 6
+L0 4 70
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/data_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/data_mem.v|
+!i113 1
+R7
+Z10 !s92 -vlog01compat -work work +incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code
+R9
+vdatapath
+R1
+!i10b 1
+!s100 ah<V9Lo2EOZ4Ie`WD;6FW1
+R2
+I`T<=ezBO9b7U=CU4f;]Gj1
+R3
+R0
+w1735660536
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/datapath.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/datapath.v
+!i122 16
+L0 3 124
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/datapath.v|
+!i113 1
+R7
+R8
+R9
+vhazard_unit
+Z11 !s110 1735665531
+!i10b 1
+!s100 mgiL3WOJllRomH_hR=acP0
+R2
+IAV1oLOeJE`UCP]`>aiWN;3
+R3
+R0
+w1735630203
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/hazard_unit.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/hazard_unit.v
+!i122 0
+L0 3 47
+R5
+r1
+!s85 0
+31
+Z12 !s108 1735665531.000000
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/hazard_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/hazard_unit.v|
+!i113 1
+R7
+R8
+R9
+vimm_extend
+R1
+!i10b 1
+!s100 KCY0HN8a_SDDT@o^3341e2
+R2
+IcE8:n>5`7j8SNGA^P_0lO3
+R3
+R0
+w1735061885
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/imm_extend.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/imm_extend.v
+!i122 15
+L0 3 21
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/imm_extend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/imm_extend.v|
+!i113 1
+R7
+R8
+R9
+vinstr_mem
+R1
+!i10b 1
+!s100 edU3X0aMQ1]cL11M;OEm01
+R2
+IZ_P:IP5J?YR:ZhN;b2JaY2
+R3
+R0
+w1731323317
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/instr_mem.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/instr_mem.v
+!i122 21
+L0 4 17
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/instr_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/instr_mem.v|
+!i113 1
+R7
+R10
+R9
+vmain_decoder
+R1
+!i10b 1
+!s100 @HLXBW[Z97V:`k;OjXa7_1
+R2
+I`KzO[h0e3kI`SVzl08V3W3
+R3
+R0
+w1735303776
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/main_decoder.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/main_decoder.v
+!i122 14
+Z13 L0 4 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/main_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/main_decoder.v|
+!i113 1
+R7
+R8
+R9
+vmux2
+R1
+!i10b 1
+!s100 O<Ld`3jD6QL?6PIEe_QAk1
+R2
+IJ4aK7c;`2AhPoWDL<TNRX3
+R3
+R0
+R4
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/mux2.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/mux2.v
+!i122 13
+Z14 L0 4 9
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/mux2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/mux2.v|
+!i113 1
+R7
+R8
+R9
+vmux3
+R1
+!i10b 1
+!s100 fShz_RzH66YN6G@4dH?@Y3
+R2
+InDEG=N@V?Tga6S1EMdf]02
+R3
+R0
+R4
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/mux3.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/mux3.v
+!i122 12
+R14
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/mux3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/mux3.v|
+!i113 1
+R7
+R8
+R9
+vmux4
+R1
+!i10b 1
+!s100 V4YdM>hK^I8CMb?cH8Cej3
+R2
+Ij92IQg6bAO80K6fXYhE;e0
+R3
+R0
+R4
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/mux4.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/mux4.v
+!i122 11
+R14
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/mux4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/mux4.v|
+!i113 1
+R7
+R8
+R9
+vpl_reg_de
+R1
+!i10b 1
+!s100 UU4BW5kUkPQDabgJFg5FD0
+R2
+IK0K;n@4A;4<`lz_:[U<>k1
+R3
+R0
+w1735652256
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_de.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_de.v
+!i122 3
+L0 4 50
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_de.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_de.v|
+!i113 1
+R7
+R8
+R9
+vpl_reg_em
+R11
+!i10b 1
+!s100 :5V6[_Xbj4SPdcDM7S_7U1
+R2
+IZNejGJ7lcJ2VT9hMYHkOa0
+R3
+R0
+w1735648720
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_em.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_em.v
+!i122 2
+R13
+R5
+r1
+!s85 0
+31
+R12
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_em.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_em.v|
+!i113 1
+R7
+R8
+R9
+vpl_reg_fd
+R1
+!i10b 1
+!s100 ADIIo<HezPEF76;fIF<8?0
+R2
+ImSdM<8@WCjQY4UMIQN?CR1
+R3
+R0
+w1735652164
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_fd.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_fd.v
+!i122 7
+L0 4 20
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_fd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_fd.v|
+!i113 1
+R7
+R8
+R9
+vpl_reg_mw
+R11
+!i10b 1
+!s100 SGgL@2QJ0S:3T1fPP9NTf2
+R2
+IYjFSHKa;NLM:;Ln9I5LcB0
+R3
+R0
+w1735646890
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_mw.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_mw.v
+!i122 1
+L0 3 33
+R5
+r1
+!s85 0
+31
+R12
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_mw.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/pl_reg_mw.v|
+!i113 1
+R7
+R8
+R9
+vpl_riscv_cpu
+R1
+!i10b 1
+!s100 Fid5EaaTk`WHaCNBof5lz1
+R2
+I9J1H<Aa3iYXHY0L?ig90a2
+R3
+R0
+w1735649009
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/pl_riscv_cpu.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/pl_riscv_cpu.v
+!i122 4
+L0 4 28
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/pl_riscv_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/pl_riscv_cpu.v|
+!i113 1
+R7
+R10
+R9
+vreg_file
+R1
+!i10b 1
+!s100 hDfJeCPL76ldZ`N?EoZ[a3
+R2
+ISd7cfc:[`?B3HDPUjA^V>1
+R3
+R0
+w1731333314
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/reg_file.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/reg_file.v
+!i122 10
+L0 8 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/reg_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/reg_file.v|
+!i113 1
+R7
+R8
+R9
+vreset_ff
+R1
+!i10b 1
+!s100 >;b:dIN?F0PSR=d_17OQU2
+R2
+If=hLo]0_jZMzZ`9@iVbl]2
+R3
+R0
+w1731487316
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/reset_ff.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/reset_ff.v
+!i122 9
+L0 4 16
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/reset_ff.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/components/reset_ff.v|
+!i113 1
+R7
+R8
+R9
+vriscv_cpu
+R1
+!i10b 1
+!s100 G5FfecF5hA0TCRmaf]jOl0
+R2
+IMjknefgaY`[XibCE:TYf^1
+R3
+R0
+w1735649055
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/riscv_cpu.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/riscv_cpu.v
+!i122 5
+R13
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/riscv_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/code/riscv_cpu.v|
+!i113 1
+R7
+R10
+R9
+vtb
+!s110 1735665533
+!i10b 1
+!s100 54`52cD4]?;zGPCA;:63i2
+R2
+IWa1CHoMm^g`c7NZBlfFjh3
+R3
+R0
+w1735049027
+8/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/.test/tb.v
+F/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/.test/tb.v
+!i122 22
+L0 3 521
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/.test/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/.test|/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/.test/tb.v|
+!i113 1
+R7
+!s92 -vlog01compat -work work +incdir+/home/eyantra/Documents/PipelinedConv/pl_riscv_cpu/.test
+R9

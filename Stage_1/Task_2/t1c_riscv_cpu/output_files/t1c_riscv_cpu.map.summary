@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Dec  6 16:57:07 2024
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : t1c_riscv_cpu
+Top-level Entity Name : t1c_riscv_cpu
+Family : Cyclone IV E
+Total logic elements : 8,032
+    Total combinational functions : 5,024
+    Dedicated logic registers : 3,104
+Total registers : 3104
+Total pins : 228
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

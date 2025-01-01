@@ -1,0 +1,5 @@
+Warning (10268): Verilog HDL information at data_mem.v(17): always construct contains both blocking and non-blocking assignments File: /home/eyantra/Documents/Task_1/t1c_riscv_cpu/code/data_mem.v Line: 17
+Warning (10273): Verilog HDL warning at imm_extend.v(19): extended using "x" or "z" File: /home/eyantra/Documents/Task_1/t1c_riscv_cpu/code/components/imm_extend.v Line: 19
+Info (10281): Verilog HDL Declaration information at datapath.v(19): object "AuiPC" differs only in case from object "auipc" in the same scope File: /home/eyantra/Documents/Task_1/t1c_riscv_cpu/code/components/datapath.v Line: 19
+Info (10281): Verilog HDL Declaration information at datapath.v(19): object "UIResult" differs only in case from object "uiresult" in the same scope File: /home/eyantra/Documents/Task_1/t1c_riscv_cpu/code/components/datapath.v Line: 19
+Warning (10268): Verilog HDL information at alu.v(14): always construct contains both blocking and non-blocking assignments File: /home/eyantra/Documents/Task_1/t1c_riscv_cpu/code/components/alu.v Line: 14

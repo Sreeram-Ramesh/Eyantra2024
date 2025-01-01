@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/eyantra/Documents/t1a_fs_pwm/simulation/modelsim
+vfrequency_scaler
+Z1 !s110 1727506479
+!i10b 1
+!s100 d_k3`1iMnTB_6o>6DWD@a3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Iz_7dISg@;?_[2WPk_2d>k3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727506412
+8/home/eyantra/Documents/t1a_fs_pwm/code/frequency_scaler.v
+F/home/eyantra/Documents/t1a_fs_pwm/code/frequency_scaler.v
+!i122 2
+L0 20 29
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1727506479.000000
+!s107 /home/eyantra/Documents/t1a_fs_pwm/code/frequency_scaler.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/t1a_fs_pwm/code|/home/eyantra/Documents/t1a_fs_pwm/code/frequency_scaler.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+/home/eyantra/Documents/t1a_fs_pwm/code
+Z8 tCvgOpt 0
+vpwm_generator
+R1
+!i10b 1
+!s100 VJiB:=1AYjIR]KeJYWTTX0
+R2
+Io^N<S<6K3FkjEE4B;47mM3
+R3
+R0
+w1727506438
+8/home/eyantra/Documents/t1a_fs_pwm/code/pwm_generator.v
+F/home/eyantra/Documents/t1a_fs_pwm/code/pwm_generator.v
+!i122 1
+L0 19 56
+R4
+r1
+!s85 0
+31
+Z9 !s108 1727506478.000000
+!s107 /home/eyantra/Documents/t1a_fs_pwm/code/pwm_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/t1a_fs_pwm/code|/home/eyantra/Documents/t1a_fs_pwm/code/pwm_generator.v|
+!i113 1
+R6
+R7
+R8
+vt1a_fs_pwm_bdf
+!s110 1727506478
+!i10b 1
+!s100 BzDROZiez6483=A91SzkV2
+R2
+IncYBM^>L;zC:97eg8R0[00
+R3
+R0
+w1727506196
+8/home/eyantra/Documents/t1a_fs_pwm/code/t1a_fs_pwm_bdf.v
+F/home/eyantra/Documents/t1a_fs_pwm/code/t1a_fs_pwm_bdf.v
+!i122 0
+L0 20 35
+R4
+r1
+!s85 0
+31
+R9
+!s107 /home/eyantra/Documents/t1a_fs_pwm/code/t1a_fs_pwm_bdf.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/t1a_fs_pwm/code|/home/eyantra/Documents/t1a_fs_pwm/code/t1a_fs_pwm_bdf.v|
+!i113 1
+R6
+R7
+R8
+vtb
+R1
+!i10b 1
+!s100 =jSl53o6MIUkOM41K5DW53
+R2
+I2c5fXd0>C8fH3hZ0XHTBk2
+R3
+R0
+w1721891708
+8/home/eyantra/Documents/t1a_fs_pwm/.test/tb.v
+F/home/eyantra/Documents/t1a_fs_pwm/.test/tb.v
+!i122 3
+L0 4 97
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/eyantra/Documents/t1a_fs_pwm/.test/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/eyantra/Documents/t1a_fs_pwm/.test|/home/eyantra/Documents/t1a_fs_pwm/.test/tb.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+/home/eyantra/Documents/t1a_fs_pwm/.test
+R8
