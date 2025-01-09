@@ -1,0 +1,54 @@
+|CS_Tester
+cs_scaler[0] <= led_controller:inst1.cs_scaler[0]
+cs_scaler[1] <= led_controller:inst1.cs_scaler[1]
+clk_50MHz => frequency_scaler:inst.clk_50MHz
+cs_out => led_controller:inst1.cs_out
+filter[0] <= led_controller:inst1.filter[0]
+filter[1] <= led_controller:inst1.filter[1]
+
+
+|CS_Tester|led_controller:inst1
+clk_1MHz => clear_color.CLK
+clk_1MHz => color[0]~reg0.CLK
+clk_1MHz => color[1]~reg0.CLK
+clk_1MHz => counter[0].CLK
+clk_1MHz => counter[1].CLK
+clk_1MHz => counter[2].CLK
+clk_1MHz => counter[3].CLK
+clk_1MHz => counter[4].CLK
+clk_1MHz => counter[5].CLK
+clk_1MHz => counter[6].CLK
+clk_1MHz => counter[7].CLK
+clk_1MHz => counter[8].CLK
+clk_1MHz => filter[0]~reg0.CLK
+clk_1MHz => filter[1]~reg0.CLK
+cs_out => red_frequency[0].CLK
+cs_out => red_frequency[1].CLK
+cs_out => red_frequency[2].CLK
+cs_out => red_frequency[3].CLK
+cs_out => blue_frequency[0].CLK
+cs_out => blue_frequency[1].CLK
+cs_out => blue_frequency[2].CLK
+cs_out => blue_frequency[3].CLK
+cs_out => green_frequency[0].CLK
+cs_out => green_frequency[1].CLK
+cs_out => green_frequency[2].CLK
+cs_out => green_frequency[3].CLK
+filter[0] <= filter[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+filter[1] <= filter[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cs_scaler[0] <= <VCC>
+cs_scaler[1] <= <VCC>
+color[0] <= color[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+color[1] <= color[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CS_Tester|frequency_scaler:inst
+clk_50MHz => counter[0].CLK
+clk_50MHz => counter[1].CLK
+clk_50MHz => counter[2].CLK
+clk_50MHz => counter[3].CLK
+clk_50MHz => counter[4].CLK
+clk_50MHz => clk_1MHz~reg0.CLK
+clk_1MHz <= clk_1MHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

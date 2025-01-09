@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Jan  1 20:07:51 2025
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : AB_LFA_Tester
+Top-level Entity Name : AB_LFA_Tester
+Family : Cyclone IV E
+Total logic elements : 1,136
+    Total combinational functions : 583
+    Dedicated logic registers : 899
+Total registers : 899
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 4,992
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,42 @@
+//Color Detection
+//Inputs : clk_1MHz, cs_out
+//Output : filter, cs_scaler
+
+module cs_freq_monitor (
+    input  clk_1MHz, cs_out,
+    output reg [1:0] filter, cs_scaler
+);
+
+// red   -> color = 1;
+// green -> color = 2;
+// blue  -> color = 3;
+
+// red filter: S2 - 0, S3 - 0
+// blue filter: S2 - 0, S3 - 1
+// clear filter: S2 - 1, S3 - 0
+// green filter: S2 - 1, S3 - 1
+
+reg [8:0] counter;
+reg [31:0] blue_frequency;
+
+initial begin
+	counter = 0;
+	blue_frequency = 0;
+	filter = 1;
+	cs_scaler = 2;
+end
+
+always @(posedge cs_out) begin
+	if (counter >= 100 && counter <= 200) begin
+		blue_frequency = blue_frequency + 1;
+	end else if (counter == 499) begin
+		blue_frequency = 0;
+	end
+end
+
+always @(posedge clk_1MHz) begin
+	if (counter == 500) counter = 0;
+	counter = counter + 1;
+end
+
+endmodule

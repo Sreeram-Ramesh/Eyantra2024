@@ -1,0 +1,227 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 784 432 952 448)
+	(text "INPUT" (rect -14 0 43 19)(font "Arial" (font_size 6)))
+	(text "cs_out" (rect 90 0 156 25)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 84 12)(pt 59 12))
+		(line (pt 84 4)(pt 59 4))
+		(line (pt 55 8)(pt 0 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 59 4)(pt 55 8))
+		(line (pt 59 12)(pt 55 8))
+	)
+	(flipy)
+	(text "VCC" (rect 0 7 40 26)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 960 416 1056 448))
+)
+(pin
+	(input)
+	(rect 256 320 464 336)
+	(text "INPUT" (rect 165 0 222 19)(font "Arial" (font_size 6)))
+	(text "clk_50MHz" (rect 5 0 115 21)(font "Arial" ))
+	(pt 208 8)
+	(drawing
+		(line (pt 124 12)(pt 149 12))
+		(line (pt 124 4)(pt 149 4))
+		(line (pt 153 8)(pt 208 8))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 149 4)(pt 153 8))
+		(line (pt 149 12)(pt 153 8))
+	)
+	(text "VCC" (rect 168 7 208 26)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 168 336 256 368))
+)
+(pin
+	(output)
+	(rect 1120 320 1313 336)
+	(text "OUTPUT" (rect 1 0 80 19)(font "Arial" (font_size 6)))
+	(text "filter[1..0]" (rect 90 0 187 25)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1440 248 1544 312))
+)
+(pin
+	(output)
+	(rect 1120 336 1357 352)
+	(text "OUTPUT" (rect 1 0 80 19)(font "Arial" (font_size 6)))
+	(text "cs_scaler[1..0]" (rect 90 0 231 25)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1448 360 1552 424))
+)
+(symbol
+	(rect 536 296 720 376)
+	(text "frequency_scaler" (rect 5 0 174 21)(font "Arial" ))
+	(text "inst" (rect 8 64 45 85)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_50MHz" (rect 0 0 110 21)(font "Arial" ))
+		(text "clk_50MHz" (rect 21 27 131 48)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "clk_1MHz" (rect 0 0 97 21)(font "Arial" ))
+		(text "clk_1MHz" (rect 81 27 178 48)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 64))
+	)
+)
+(symbol
+	(rect 832 296 1032 408)
+	(text "led_controller" (rect 5 0 138 21)(font "Arial" ))
+	(text "inst1" (rect 8 96 57 121)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_1MHz" (rect 0 0 97 21)(font "Arial" ))
+		(text "clk_1MHz" (rect 21 27 118 48)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "cs_out" (rect 0 0 67 21)(font "Arial" ))
+		(text "cs_out" (rect 21 43 88 64)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "filter[1..0]" (rect 0 0 90 21)(font "Arial" ))
+		(text "filter[1..0]" (rect 103 27 193 48)(font "Arial" ))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(port
+		(pt 200 48)
+		(output)
+		(text "cs_scaler[1..0]" (rect 0 0 142 21)(font "Arial" ))
+		(text "cs_scaler[1..0]" (rect 59 43 201 64)(font "Arial" ))
+		(line (pt 200 48)(pt 184 48)(line_width 3))
+	)
+	(port
+		(pt 200 64)
+		(output)
+		(text "color[1..0]" (rect 0 0 96 21)(font "Arial" ))
+		(text "color[1..0]" (rect 98 59 194 80)(font "Arial" ))
+		(line (pt 200 64)(pt 184 64)(line_width 3))
+	)
+	(parameter
+		"RED_FILTER"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"BLUE_FILTER"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"CLEAR_FILTER"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"GREEN_FILTER"
+		"3"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"RED_COLOR"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"BLUE_COLOR"
+		"3"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"CLEAR_COLOR"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"GREEN_COLOR"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 184 96))
+	)
+	(annotation_block (parameter)(rect 768 -8 1144 256))
+)
+(connector
+	(pt 784 440)
+	(pt 744 440)
+)
+(connector
+	(pt 744 440)
+	(pt 744 344)
+)
+(connector
+	(pt 464 328)
+	(pt 536 328)
+)
+(connector
+	(pt 720 328)
+	(pt 832 328)
+)
+(connector
+	(pt 832 344)
+	(pt 744 344)
+)
+(connector
+	(pt 1032 328)
+	(pt 1120 328)
+	(bus)
+)
+(connector
+	(pt 1032 344)
+	(pt 1120 344)
+	(bus)
+)

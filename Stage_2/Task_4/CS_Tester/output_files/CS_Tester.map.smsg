@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at led_controller.v(28): object "clear_color" differs only in case from object "CLEAR_COLOR" in the same scope File: /home/eyantra/Documents/Task_4/CS_Tester/led_controller.v Line: 28
