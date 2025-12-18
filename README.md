@@ -23,3 +23,4 @@ To read more on the Processor design check this [repo](https://github.com/Sreera
 | :---: | :---: |
 | <img src="./media/FPGAEyantra4.png" width="400" alt="Description 1"> <br> **Prototyping on Fusion360** | <img src="./media/FPGAEyantra1.png" width="400" alt="Description 2"> <br> **First Iteration Build** |
 | <img src="./media/FPGAEyantra2.png" width="400" alt="Description 3"> <br> **Chassis Design on AutoCad** | <img src="./media/FPGAEyantra3.png" width="400" alt="Description 4"> <br> **Final Iteration Build** |
+| <img src="./media/FPGAEyantra5.png" width="400" alt="Description 3"> <br> **Our Processor Life Signals** | <img src="./media/FPGAEyantra6.png" width="400" alt="Description 4"> <br> **Bot in test run** |
